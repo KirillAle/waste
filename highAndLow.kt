@@ -1,8 +1,6 @@
 fun highAndLow(numbers: String): String {
     val splitNumbers = numbers.split(" ")
-    println(splitNumbers)
     val intNumbers = splitNumbers.map { it.toInt() }
-    println(intNumbers)
     return "${intNumbers.maxOrNull()} ${intNumbers.minOrNull()}"
 }
 
